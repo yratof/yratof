@@ -1,0 +1,17 @@
+.ident{
+  @include span( 6, 12, 1rem );
+
+  h1{
+    small{
+      display: block;
+       @include modular( 2rem )
+    }
+    @include modular( 10rem );
+    line-height: 1;
+    font-weight: bold;
+  }
+}
+
+.portfolio--navigation{
+  @include span( 6, 12, 1rem, true );
+}

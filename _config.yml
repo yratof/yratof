@@ -1,0 +1,19 @@
+# Site settings
+title: yratof
+email: andrew@yratof.co.uk
+description: Artist in Norway playing with code and digital landscapes
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yratof.co.uk" # the base hostname & protocol for your site
+permalink: /:year/:month/:title/
+twitter_username: yratof
+github_username:  yratof
+timezone: Europe/Oslo
+
+# Extra things
+exclude: [ 'node_modules', 'post', 'animation', 'illustration' ]
+
+# Build settings
+markdown: kramdown
+
+gems:
+  - jekyll-sitemap

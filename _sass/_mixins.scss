@@ -1,0 +1,54 @@
+/******************************************************************
+Stylesheet: Mixins & Constants Stylesheet
+******************************************************************/
+
+* { box-sizing: border-box; }
+
+
+/*
+	These are the breakpoints for your website. These can be customised to your design. The
+	more that I think about it, the more I'm starting to realise that these breakpoints
+	need to change for the design, and not for the sizes they are. They're just a guide.
+	In fact, I insist, you MUST change these.
+*/
+
+// Rems
+$base:		20rem;
+$mobile: 	30rem;
+$phablet:	37rem;
+$tablet: 	48rem;
+$desklet: 55rem;
+$desktop: 62rem;
+$cinema: 	75rem;
+
+$breakpoints: (
+	mobile:		$mobile,
+	phablet:	$phablet,
+	tablet:		$tablet,
+	desklet:	$desklet,
+	desktop:	$desktop,
+	cinema:		$cinema
+);
+
+/* This mixins file was starting to get way too big. So I've cut it down into fragments. */
+
+@import 'mixins/clearfix',
+				'mixins/blend-mode',
+				'mixins/gradient',
+				'mixins/placeholder',
+				'mixins/screen-readers',
+				'mixins/vertical-align',
+				'mixins/flush-columns',
+				'mixins/button',
+				'mixins/element-counting',
+				'mixins/grids',
+				'mixins/inline-block',
+				'mixins/content-order',
+				'mixins/modular',
+				'mixins/mediaqueries',
+				'mixins/font-smoothing',
+				'mixins/brightness',
+				'mixins/encode-svgs'
+;
+
+

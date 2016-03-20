@@ -1,0 +1,22 @@
+<header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+    <nav class="site-nav">
+        {% assign post = site.posts.first %}
+        {% if post.title %}
+            <a class="latest" href="{{ root_url }}{{ post.url }}"><span>[Latest thoughts:</span> {{ post.title }}]</a>
+        {% endif %}
+
+        {% for page in site.pages reversed %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+    </nav>
+
+  </div>
+
+</header>

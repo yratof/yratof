@@ -1,0 +1,90 @@
+
+// Primary alert colours
+
+$alert-yellow:		#eadb33;
+$alert-red:				#be3333;
+$alert-green:			#a8c923;
+$alert-blue:			#209dd6;
+
+// Newsprint, black and white
+
+$black:						#000;
+$white:						#fff;
+$text-colour:     #000;
+
+// Primary colours
+
+$red:							#ff6347;
+$blue:						#17a9b2;
+$green:						#b4d555;
+
+$brand-colour:		$red;
+$brand-highlight:	$blue;
+$brand-compliment:$green;
+
+// Links and Anchors
+
+$link-color:			$brand-colour;
+$link-hover:			darken($link-color, 9%);
+
+// Shades of Grey
+
+$disabled-grey: 	#cfcfcf;
+$grey:			   		#aaa;
+$grey-dark:				darken($grey, 13%);
+$grey-darker:			darken($grey-dark, 13%);
+$grey-light:			#fafafa;
+$grey-lighter:		lighten($grey-light, 13%);
+
+//Social Networks
+
+$twitter:					#00aee7;
+$facebook:				#0065b2;
+$google: 					#f75539;
+
+//Alerts
+$warning_text: 		$grey-dark;
+$error_text: 			$alert-red;
+$warning_text: 		$grey-dark;
+$info_text: 			$alert-yellow;
+$success_text: 		$alert-green;
+
+// Separators
+$hr_border: 			$grey;
+$menu-border: 		$grey-dark;
+
+// Headings
+
+$headings-color: 	$alert-blue;
+
+
+// Backgrounds:
+$background-color: $white;
+
+$spacing-unit: 2rem;
+
+// Colours and Colour Classes.
+// This should overwrite the <a>
+
+%colour{ text-decoration: underline; }
+
+$colours: (
+	'red'	: $red,
+	'blue'	: $blue,
+	'green'	: $green
+);
+
+@each $class, $colour in $colours {
+	.#{$class}{
+		color: #{$colour};
+		@extend %colour;
+	}
+  a.#{$class}{
+		color: #{$colour};
+		@extend %colour;
+
+		&:hover, &:active, &:focus{
+			color: darken(saturate($colour, 5%), 10%);
+		}
+	}
+}
