@@ -12,22 +12,23 @@ Stylesheet: Mixins & Constants Stylesheet
 	In fact, I insist, you MUST change these.
 */
 
-// Rems
-$base:		20rem;
-$mobile: 	30rem;
-$phablet:	37rem;
-$tablet: 	48rem;
-$desklet: 55rem;
-$desktop: 62rem;
-$cinema: 	75rem;
+
+$landscape:        30.0625rem;
+$mobile-only:      37.9375rem;
+$tablet:           48rem;
+$tablet-down:      47.9rem;
+$tablet-landscape: 64rem;
+$laptop:           64.0625rem;
+$desktop:          77.5rem;
+$cinema:           103.75rem;
 
 $breakpoints: (
-	mobile:		$mobile,
-	phablet:	$phablet,
-	tablet:		$tablet,
-	desklet:	$desklet,
-	desktop:	$desktop,
-	cinema:		$cinema
+  landscape : $landscape,
+  mobile    : $mobile-only,
+  tablet    : $tablet,
+  laptop    : $laptop,
+  desktop   : $desktop,
+  cinema    : $cinema
 );
 
 /* This mixins file was starting to get way too big. So I've cut it down into fragments. */

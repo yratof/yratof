@@ -1,17 +1,64 @@
+.home{
+  @include modular-element( padding, 5rem );
+  @include modular-element( padding-top, 10rem );
+
+}
+
+
+
+// Logo on home page
 .ident{
-  @include span( 6, 12, 1rem );
+  @include span( 6, 12, 2rem );
 
   h1{
+    line-height: 0;
+    margin-top: -1rem;
+
     small{
       display: block;
-       @include modular( 2rem )
+      @include modular( 2rem );
+      margin: 0 0 -0.5rem;
+      color: $brand-colour;
     }
+
+    span{
+      line-height: 0.8;
+    }
+
     @include modular( 10rem );
-    line-height: 1;
+    float: right;
     font-weight: bold;
   }
 }
 
-.portfolio--navigation{
-  @include span( 6, 12, 1rem, true );
+.pnav{
+  @include span( 6, 12, 2rem, true );
+
+  h2{
+    @include modular( 3rem );
+    margin: 0;
+  }
+
+  &--section {
+
+  }
+
+  &--title {
+
+  }
+
+  &--list {
+    list-style: none;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+
+    li{ margin-bottom: 0;}
+
+    a{
+      @include modular( 2rem );
+      font-weight: 500;
+    }
+  }
+
 }

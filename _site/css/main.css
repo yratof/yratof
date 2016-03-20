@@ -116,7 +116,7 @@ C O N T E N T   C H O R E O G R A P H Y
 Something that will reorder your content if used correctly.
 And on the right browser, of course.
 **********************/
-/* This is quite an experiment with font sizes. 
+/* This is quite an experiment with font sizes.
  Basically, i'm using a modualr scale for the type. */
 /* 	This mixin will help you nest mediaqueries easier.
 	@Usage:
@@ -210,114 +210,96 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "circle", arial, sans-serif; }
 
 h1, .h1 {
-  font-size: modular-scale(-4, 2.875rem, 1.067);
+  font-size: 1.1776rem;
   font-weight: 600; }
-  @media (min-width: 37rem) {
+  @media (min-width: 30.0625rem) {
     h1, .h1 {
-      font-size: modular-scale(-4, 2.875rem, 1.067); } }
+      font-size: 1.472rem; } }
   @media (min-width: 48rem) {
     h1, .h1 {
-      font-size: modular-scale(-3, 2.875rem, 1.067); } }
-  @media (min-width: 55rem) {
+      font-size: 1.84rem; } }
+  @media (min-width: 64.0625rem) {
     h1, .h1 {
-      font-size: modular-scale(-2, 2.875rem, 1.067); } }
-  @media (min-width: 62rem) {
-    h1, .h1 {
-      font-size: modular-scale(-1, 2.875rem, 1.067); } }
-  @media (min-width: 75rem) {
+      font-size: 2.3rem; } }
+  @media (min-width: 77.5rem) {
     h1, .h1 {
       font-size: 2.875rem; } }
 
 h2, .h2 {
-  font-size: modular-scale(-4, 1.875rem, 1.067);
+  font-size: 0.768rem;
   font-weight: 600; }
-  @media (min-width: 37rem) {
+  @media (min-width: 30.0625rem) {
     h2, .h2 {
-      font-size: modular-scale(-4, 1.875rem, 1.067); } }
+      font-size: 0.96rem; } }
   @media (min-width: 48rem) {
     h2, .h2 {
-      font-size: modular-scale(-3, 1.875rem, 1.067); } }
-  @media (min-width: 55rem) {
+      font-size: 1.2rem; } }
+  @media (min-width: 64.0625rem) {
     h2, .h2 {
-      font-size: modular-scale(-2, 1.875rem, 1.067); } }
-  @media (min-width: 62rem) {
-    h2, .h2 {
-      font-size: modular-scale(-1, 1.875rem, 1.067); } }
-  @media (min-width: 75rem) {
+      font-size: 1.5rem; } }
+  @media (min-width: 77.5rem) {
     h2, .h2 {
       font-size: 1.875rem; } }
 
 h3, .h3 {
-  font-size: modular-scale(-4, 1.5rem, 1.067);
+  font-size: 0.6144rem;
   font-family: "Fira Mono", monospace;
   color: #17a9b2; }
-  @media (min-width: 37rem) {
+  @media (min-width: 30.0625rem) {
     h3, .h3 {
-      font-size: modular-scale(-4, 1.5rem, 1.067); } }
+      font-size: 0.768rem; } }
   @media (min-width: 48rem) {
     h3, .h3 {
-      font-size: modular-scale(-3, 1.5rem, 1.067); } }
-  @media (min-width: 55rem) {
+      font-size: 0.96rem; } }
+  @media (min-width: 64.0625rem) {
     h3, .h3 {
-      font-size: modular-scale(-2, 1.5rem, 1.067); } }
-  @media (min-width: 62rem) {
-    h3, .h3 {
-      font-size: modular-scale(-1, 1.5rem, 1.067); } }
-  @media (min-width: 75rem) {
+      font-size: 1.2rem; } }
+  @media (min-width: 77.5rem) {
     h3, .h3 {
       font-size: 1.5rem; } }
 
 h4, .h4 {
-  font-size: modular-scale(-4, 1.125rem, 1.067); }
-  @media (min-width: 37rem) {
+  font-size: 0.4608rem; }
+  @media (min-width: 30.0625rem) {
     h4, .h4 {
-      font-size: modular-scale(-4, 1.125rem, 1.067); } }
+      font-size: 0.576rem; } }
   @media (min-width: 48rem) {
     h4, .h4 {
-      font-size: modular-scale(-3, 1.125rem, 1.067); } }
-  @media (min-width: 55rem) {
+      font-size: 0.72rem; } }
+  @media (min-width: 64.0625rem) {
     h4, .h4 {
-      font-size: modular-scale(-2, 1.125rem, 1.067); } }
-  @media (min-width: 62rem) {
-    h4, .h4 {
-      font-size: modular-scale(-1, 1.125rem, 1.067); } }
-  @media (min-width: 75rem) {
+      font-size: 0.9rem; } }
+  @media (min-width: 77.5rem) {
     h4, .h4 {
       font-size: 1.125rem; } }
 
 h5, .h5 {
-  font-size: modular-scale(-4, 1rem, 1.067); }
-  @media (min-width: 37rem) {
+  font-size: 0.4096rem; }
+  @media (min-width: 30.0625rem) {
     h5, .h5 {
-      font-size: modular-scale(-4, 1rem, 1.067); } }
+      font-size: 0.512rem; } }
   @media (min-width: 48rem) {
     h5, .h5 {
-      font-size: modular-scale(-3, 1rem, 1.067); } }
-  @media (min-width: 55rem) {
+      font-size: 0.64rem; } }
+  @media (min-width: 64.0625rem) {
     h5, .h5 {
-      font-size: modular-scale(-2, 1rem, 1.067); } }
-  @media (min-width: 62rem) {
-    h5, .h5 {
-      font-size: modular-scale(-1, 1rem, 1.067); } }
-  @media (min-width: 75rem) {
+      font-size: 0.8rem; } }
+  @media (min-width: 77.5rem) {
     h5, .h5 {
       font-size: 1rem; } }
 
 h6, .h6 {
-  font-size: modular-scale(-4, 0.85rem, 1.067); }
-  @media (min-width: 37rem) {
+  font-size: 0.34816rem; }
+  @media (min-width: 30.0625rem) {
     h6, .h6 {
-      font-size: modular-scale(-4, 0.85rem, 1.067); } }
+      font-size: 0.4352rem; } }
   @media (min-width: 48rem) {
     h6, .h6 {
-      font-size: modular-scale(-3, 0.85rem, 1.067); } }
-  @media (min-width: 55rem) {
+      font-size: 0.544rem; } }
+  @media (min-width: 64.0625rem) {
     h6, .h6 {
-      font-size: modular-scale(-2, 0.85rem, 1.067); } }
-  @media (min-width: 62rem) {
-    h6, .h6 {
-      font-size: modular-scale(-1, 0.85rem, 1.067); } }
-  @media (min-width: 75rem) {
+      font-size: 0.68rem; } }
+  @media (min-width: 77.5rem) {
     h6, .h6 {
       font-size: 0.85rem; } }
 
@@ -341,7 +323,7 @@ body {
   color: #000;
   background-color: #fff;
   -webkit-text-size-adjust: 100%; }
-  @media (min-width: 75rem) {
+  @media (min-width: 103.75rem) {
     body {
       font-size: 140%; } }
 
@@ -446,12 +428,12 @@ pre {
   @media (min-width: 48rem) {
     .wrap, .w, .wrapper {
       max-width: 48rem; } }
-  @media (min-width: 62rem) {
+  @media (min-width: 77.5rem) {
     .wrap, .w, .wrapper {
-      max-width: 62rem; } }
-  @media (min-width: 75rem) {
+      max-width: 77.5rem; } }
+  @media (min-width: 103.75rem) {
     .wrap, .w, .wrapper {
-      max-width: 75rem; } }
+      max-width: 103.75rem; } }
 
 @media (min-width: 48rem) {
   .single {
@@ -657,51 +639,116 @@ hr {
   .highlight .il {
     color: #099; }
 
+.home {
+  padding: 2.048rem;
+  padding-top: 4.096rem; }
+  @media (min-width: 30.0625rem) {
+    .home {
+      padding: 2.56rem; } }
+  @media (min-width: 48rem) {
+    .home {
+      padding: 3.2rem; } }
+  @media (min-width: 64.0625rem) {
+    .home {
+      padding: 4rem; } }
+  @media (min-width: 77.5rem) {
+    .home {
+      padding: 5rem; } }
+  @media (min-width: 30.0625rem) {
+    .home {
+      padding-top: 5.12rem; } }
+  @media (min-width: 48rem) {
+    .home {
+      padding-top: 6.4rem; } }
+  @media (min-width: 64.0625rem) {
+    .home {
+      padding-top: 8rem; } }
+  @media (min-width: 77.5rem) {
+    .home {
+      padding-top: 10rem; } }
+
 .ident {
   width: 48%;
-  width: calc(49.98889% - 0.5rem);
+  width: calc(49.98889% - 1rem);
   float: left;
   margin-right: 2%;
-  margin-right: calc(1rem); }
+  margin-right: calc(2rem); }
   .ident h1 {
-    font-size: modular-scale(-4, 10rem, 1.067);
-    line-height: 1;
+    line-height: 0;
+    margin-top: -1rem;
+    font-size: 4.096rem;
+    float: right;
     font-weight: bold; }
     .ident h1 small {
       display: block;
-      font-size: modular-scale(-4, 2rem, 1.067); }
-      @media (min-width: 37rem) {
+      font-size: 0.8192rem;
+      margin: 0 0 -0.5rem;
+      color: #ff6347; }
+      @media (min-width: 30.0625rem) {
         .ident h1 small {
-          font-size: modular-scale(-4, 2rem, 1.067); } }
+          font-size: 1.024rem; } }
       @media (min-width: 48rem) {
         .ident h1 small {
-          font-size: modular-scale(-3, 2rem, 1.067); } }
-      @media (min-width: 55rem) {
+          font-size: 1.28rem; } }
+      @media (min-width: 64.0625rem) {
         .ident h1 small {
-          font-size: modular-scale(-2, 2rem, 1.067); } }
-      @media (min-width: 62rem) {
-        .ident h1 small {
-          font-size: modular-scale(-1, 2rem, 1.067); } }
-      @media (min-width: 75rem) {
+          font-size: 1.6rem; } }
+      @media (min-width: 77.5rem) {
         .ident h1 small {
           font-size: 2rem; } }
-    @media (min-width: 37rem) {
+    .ident h1 span {
+      line-height: 0.8; }
+    @media (min-width: 30.0625rem) {
       .ident h1 {
-        font-size: modular-scale(-4, 10rem, 1.067); } }
+        font-size: 5.12rem; } }
     @media (min-width: 48rem) {
       .ident h1 {
-        font-size: modular-scale(-3, 10rem, 1.067); } }
-    @media (min-width: 55rem) {
+        font-size: 6.4rem; } }
+    @media (min-width: 64.0625rem) {
       .ident h1 {
-        font-size: modular-scale(-2, 10rem, 1.067); } }
-    @media (min-width: 62rem) {
-      .ident h1 {
-        font-size: modular-scale(-1, 10rem, 1.067); } }
-    @media (min-width: 75rem) {
+        font-size: 8rem; } }
+    @media (min-width: 77.5rem) {
       .ident h1 {
         font-size: 10rem; } }
 
-.portfolio--navigation {
+.pnav {
   width: 48%;
-  width: calc(49.98889% - 0.5rem);
+  width: calc(49.98889% - 1rem);
   float: left; }
+  .pnav h2 {
+    font-size: 1.2288rem;
+    margin: 0; }
+    @media (min-width: 30.0625rem) {
+      .pnav h2 {
+        font-size: 1.536rem; } }
+    @media (min-width: 48rem) {
+      .pnav h2 {
+        font-size: 1.92rem; } }
+    @media (min-width: 64.0625rem) {
+      .pnav h2 {
+        font-size: 2.4rem; } }
+    @media (min-width: 77.5rem) {
+      .pnav h2 {
+        font-size: 3rem; } }
+  .pnav--list {
+    list-style: none;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0; }
+    .pnav--list li {
+      margin-bottom: 0; }
+    .pnav--list a {
+      font-size: 0.8192rem;
+      font-weight: 500; }
+      @media (min-width: 30.0625rem) {
+        .pnav--list a {
+          font-size: 1.024rem; } }
+      @media (min-width: 48rem) {
+        .pnav--list a {
+          font-size: 1.28rem; } }
+      @media (min-width: 64.0625rem) {
+        .pnav--list a {
+          font-size: 1.6rem; } }
+      @media (min-width: 77.5rem) {
+        .pnav--list a {
+          font-size: 2rem; } }
