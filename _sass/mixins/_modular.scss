@@ -71,7 +71,7 @@ $modular-scale-base: 1em !default;
 /* This is quite an experiment with font sizes.
  Basically, i'm using a modualr scale for the type. */
 
-@mixin modular($largest, $ratio: $major-third){
+@mixin modular($largest, $ratio: $major-second){
                                         font-size: modular-scale(-4, $largest, $ratio);
   @include wider-than ( landscape )   { font-size: modular-scale(-3, $largest, $ratio); }
   @include wider-than ( tablet )      { font-size: modular-scale(-2, $largest, $ratio); }
@@ -82,7 +82,7 @@ $modular-scale-base: 1em !default;
 
 }
 
-@mixin modular-element($element, $largest, $ratio: $major-third){
+@mixin modular-element($element, $largest, $ratio: $minor-third){
                                         #{$element}: modular-scale(-4, $largest, $ratio);
   @include wider-than ( landscape )   { #{$element}: modular-scale(-3, $largest, $ratio); }
   @include wider-than ( tablet )      { #{$element}: modular-scale(-2, $largest, $ratio); }

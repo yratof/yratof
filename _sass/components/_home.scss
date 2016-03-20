@@ -1,14 +1,26 @@
 .home{
   @include modular-element( padding, 5rem );
   @include modular-element( padding-top, 10rem );
-
 }
 
+
+// Layout
+.ident{
+  width: 100%;
+  @include wider-than( tablet ){
+    @include span( 6, 12, 2rem );
+  }
+}
+.pnav{
+  width: 100%;
+  @include wider-than( tablet ){
+    @include span( 6, 12, 2rem, true );
+  }
+}
 
 
 // Logo on home page
 .ident{
-  @include span( 6, 12, 2rem );
 
   h1{
     line-height: 0;
@@ -26,13 +38,14 @@
     }
 
     @include modular( 10rem );
-    float: right;
-    font-weight: bold;
+    font-weight: 600;
+    @include wider-than( tablet ){
+      float: right;
+    }
   }
 }
 
 .pnav{
-  @include span( 6, 12, 2rem, true );
 
   h2{
     @include modular( 3rem );
@@ -56,7 +69,7 @@
     li{ margin-bottom: 0;}
 
     a{
-      @include modular( 2rem );
+      @include modular( 2rem, $minor-second );
       font-weight: 500;
     }
   }
