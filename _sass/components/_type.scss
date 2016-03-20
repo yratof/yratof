@@ -1,0 +1,102 @@
+// font stacks
+$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$mono:              'Fira Mono', monospace;
+
+.mono{ font-family: $mono;}
+
+@font-face {
+    font-family: 'circle';
+    src: url('../fonts/circularstd-book.eot');
+    src: url('../fonts/circularstd-book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/circularstd-book.woff') format('woff'),
+         url('../fonts/circularstd-book.ttf') format('truetype'),
+         url('../fonts/circularstd-book.svg#CircularStdBookRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'circle';
+    src: url('../fonts/circularstd-bold.eot');
+    src: url('../fonts/circularstd-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/circularstd-bold.woff') format('woff'),
+         url('../fonts/circularstd-bold.ttf') format('truetype'),
+         url('../fonts/circularstd-bold.svg#CircularStdBoldRegular') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'wtny';
+    src: url('../fonts/wtny_light.woff2') format('woff2'),
+         url('../fonts/wtny_light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'wtny';
+    src: url('../fonts/wtny_book.woff2') format('woff2'),
+         url('../fonts/wtny_book.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'wtny';
+    src: url('../fonts/wtny_semibold.woff2') format('woff2'),
+         url('../fonts/wtny_semibold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+$circle:	'circle', arial, sans-serif;
+$sans-serif: 'wtny', arial, sans-serif ;
+
+.circle{ font-family: $circle;}
+body{
+    font-family: $sans-serif;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+}
+
+// Our variables
+$base-font-family: $sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+//////////////////////////////////////////////////
+
+// Using a modular font-size thing here,
+// that way I can define the size once &
+// not have to worry about the rest of
+// the site. Though if the design looks
+// like shit, i'm not going to use it.
+
+
+p{
+    font-size: 1.5rem;
+    font-family: $sans-serif;
+    font-weight: 400;
+    line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizelegibility; // Fix the character spacing for headings
+    color: $text-colour;
+    font-weight: 300;
+    margin: 0;
+    font-family: $circle;
+}
+
+h1, .h1 {   @include modular(2.875rem); font-weight: 600; }
+h2, .h2 {   @include modular(1.875rem); font-weight: 600; }
+h3, .h3 {   @include modular(1.5rem); font-family: $mono; color: $blue; }
+h4, .h4 {   @include modular(1.125rem); }
+h5, .h5 {   @include modular(1rem);     }
+h6, .h6 {   @include modular(0.85rem);  }
+

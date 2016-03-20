@@ -1,0 +1,34 @@
+
+/* 	This mixin will help you nest mediaqueries easier.
+	@Usage:
+		@include wider-than(mobile) 	{ width: 55%; 	}
+		@include wider-than(phablet) 	{ width: 65%; 	}
+		@include wider-than(tablet) 	{ width: 75%;	}
+
+	Uses the breakpoint map defined inside _breakpoints.scss
+*/
+
+// min-width mediaquery
+@mixin wider-than($screen-size) {
+  @if map-has-key($breakpoints, $screen-size) {
+      @media (min-width: map-get($breakpoints, $screen-size)) {
+          @content;
+      }
+  } @else {
+      // Debugging
+      @warn "'#{$screen-size}' has not been declared as a breakpoint."
+  }
+}
+
+// max-width mediaquery
+@mixin not-wider-than($screen-size) {
+  @if map-has-key($breakpoints, $screen-size) {
+      @media (max-width: map-get($breakpoints, $screen-size)) {
+          @content;
+      }
+  } @else {
+      // Debugging
+      @warn "'#{$screen-size}' has not been declared as a breakpoint."
+  } 
+}
+
