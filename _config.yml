@@ -2,7 +2,7 @@
 title: yratof
 email: yratof@gmail.com
 description: Artist in Norway playing with code and digital landscapes
-baseurl: "/yratof/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yratof.co.uk" # the base hostname & protocol for your site
 permalink: /:year/:month/:title/
 twitter_username: yratof
